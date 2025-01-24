@@ -1,15 +1,14 @@
 name: CI/CD Pipeline
 
 on:
-  push:
-  
+    push:
+   
       branches:
         - main
         - master
-      
-
-    tags:
-      - "v*" # Триггер при пуше тегов, начинающихся с "v"
+      tags:
+        - "v*"
+  
 
 jobs:
   build-and-test:
